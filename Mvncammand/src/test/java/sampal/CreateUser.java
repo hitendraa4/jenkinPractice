@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 public class CreateUser {
 	
+	
 	@Test
 	public void createUser()
 	{
@@ -18,6 +19,7 @@ public class CreateUser {
 		System.out.println(URL+" "+Browser);
 		
 		WebDriver driver;
+		
 		if(Browser.equals("chrome"))
 		{
 			 driver=new ChromeDriver();
@@ -31,10 +33,19 @@ public class CreateUser {
 		{
 			 driver=new ChromeDriver();
 		}
-		
-		
-		driver.close();
-		
 	}
-
+		
+		@Test
+		public void createOrg()
+		{
+			System.out.println("jenkins poll scm");
+		}
+		
+		
+	
+		
 }
+
+	
+
+
